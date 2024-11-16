@@ -36,18 +36,18 @@
             <hr>
             <form method="post" action="insert.jsp">
                 <div class="form-group">
-                    <label for="name">Full Name</label>
-                    <input type="text" class="form-control" id="name" placeholder="Enter full name" required>
+                    <label>Full Name</label>
+                    <input type="text" class="form-control" name="name" id="name" placeholder="Enter full name" required>
                     <br>
                 </div>
                 <div class="form-group">
-                    <label for="email">Email Address</label>
-                    <input type="email" class="form-control" id="email" placeholder="Enter email" required>
+                    <label>Email Address</label>
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Enter email" required>
                     <br>
                 </div>
                 <div class="form-group">
-                    <label for="mobile">Mobile Number</label>
-                    <input type="tel" class="form-control" id="mobile" placeholder="Enter mobile number" required>
+                    <label>Mobile Number</label>
+                    <input type="tel" class="form-control" id="mobile" name="mobile" placeholder="Enter mobile number" required>
                 </div>
                 <br>
                 <div class="d-flex align-items-center justify-content-center">

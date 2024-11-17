@@ -54,6 +54,8 @@
                     <button type="submit" class="btn btn-primary btn-block">Submit</button>
                 </div>
             </form>
+            <br>
+            <a href="viewData.jsp" class="text-decoration-none align-items-center justify-content-center d-flex">View Data</a>
         </div>
     </body>
 </html>

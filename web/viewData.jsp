@@ -51,7 +51,7 @@
                                         <td class="text-center"><%= rs.getString("email") %></td>
                                         <td class="text-center"><%= rs.getString("mobile") %></td>
                                         <td class="text-center">
-                                            <a href="updateData.jsp?<%= rs.getString("id")%>" class="text-success text-decoration-none">Update</a>&nbsp;
+                                            <a href="updateData.jsp?userId=<%= rs.getString("id")%>" class="text-success text-decoration-none">Update</a>&nbsp;
                                             <a href="deleteData.jsp?<%= rs.getString("id")%>" class="text-danger text-decoration-none">Delete</a>
                                         </td>
                                     </tr>

@@ -36,6 +36,7 @@
                                         <th class="text-center">Name</th>
                                         <th class="text-center">Email</th>
                                         <th class="text-center">Contact Number</th>
+                                        <th class="text-center">Action</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -49,6 +50,10 @@
                                         <td class="text-center"><%= rs.getString("name") %></td>
                                         <td class="text-center"><%= rs.getString("email") %></td>
                                         <td class="text-center"><%= rs.getString("mobile") %></td>
+                                        <td class="text-center">
+                                            <a href="updateData.jsp?<%= rs.getString("id")%>" class="text-success text-decoration-none">Update</a>&nbsp;
+                                            <a href="deleteData.jsp?<%= rs.getString("id")%>" class="text-danger text-decoration-none">Delete</a>
+                                        </td>
                                     </tr>
                                     <% 
                                         }
@@ -63,6 +68,8 @@
                             </table>
                         </div>
                     </div>
+                    <br>
+                    <a href="index.jsp" class="text-decoration-none align-items-center justify-content-center d-flex">Add Data</a>
                 </div>
             </div>
         </div>
@@ -71,7 +78,7 @@
         <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
         <script src="assets/js/dataTables.min.js"></script>
         <script>
-            $(document).ready(function() {
+            $(document).ready(function () {
                 $('#myTable').DataTable();
             });
         </script>

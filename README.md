@@ -21,4 +21,4 @@ Before running the project, ensure you have the following installed:
 
 ## Database Setup
 
-1. Create a MySQL database.
+1. Create a MySQL database
